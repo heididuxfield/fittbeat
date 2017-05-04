@@ -1,0 +1,87 @@
+footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+    h2 {
+        margin-bottom: 30px;
+    }
+    h3 {
+        width: 440px;
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    span {
+        display: inline-block;
+        font-size: 5rem;
+        margin-bottom: 1.25em;
+        color: #6fbe45;
+        &:hover { 
+            color: #59b523;
+        }
+    }
+}
+
+// ----- SOCIAL MEDIA LINKS ----- //
+.follow-sm {
+    margin-left: 50px;
+//    outline: red solid 1px;
+}
+.social-media {
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 45px;
+    p {
+        color: #565656;
+        text-align: center;
+        margin-left: -20px;
+        line-height: 3em;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+    a {
+        background-color: #6fbe45;
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        &:link {
+            text-decoration: none;
+            color: #fff;  
+        }
+        &:hover {
+            background-color: #59b523;
+            text-decoration: none;
+            color: #fff;  
+        }
+        &:active {
+            text-decoration: none;
+            color: #fff;  
+        }
+        &:visited {
+            text-decoration: none;
+            color: #fff;  
+        }  
+        
+    }
+}
+
+.fa {
+    padding: 9px;
+    font-size: 5rem;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
+.footer-bar {
+    margin-top: 40px;
+    width: 100%;
+    height: 60px;
+    background-color: #404041;
+}

@@ -1,0 +1,166 @@
+// Variables
+@import "variables";
+
+@import "header";
+@import "about";
+@import "pound";
+@import "testimonials";
+@import "footer";
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300');
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "nav";
+@import "typography";
+@import "forms";
+@import "adminmanagebookings";
+@import "adminhome";
+
+
+
+// -------------- MAIN ---------------- //
+body {
+        width: 100%; 
+        height: auto;
+    
+        /*for rems*/
+        font-size: 62.5%;
+    }
+
+.line-break {
+    display: block;
+}
+
+.grey-box {
+    background-color: rgba(0,0,0,0.03);
+}
+
+.grow {
+    transition: all .2s ease-in-out; 
+    &:hover {
+        transform: scale(1.1); 
+    }
+}
+
+/* button styles */
+.btn {
+        border-radius: 8px;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+.register-btn {
+        width: 300px;
+        background-color: #6fbe45;
+        &:hover {
+            color: #000;
+            background-color: #59b523;
+        }
+    }
+
+.login-btn {
+    width: 160px;
+    background-color: #f1b431;
+    &:hover {
+        color: #000;
+        background-color: #efa625;
+    }
+}
+
+.book-btn {
+        width: 300px;
+        background-color: #6fbe45;
+        margin-left: 70px;
+        margin-top: 30px;
+        &:hover {
+            color: #000;
+            background-color: #59b523;
+            transform: scale(1.1); 
+            transition: all .2s ease-in-out;
+        }
+    }
+
+.admin-return-btn {
+    padding-left: 35px;
+    background-color: #f1b431;
+     &:hover {
+        color: #000;
+        background-color: #efa625;
+    }
+}
+
+.manage-bookings-btn {
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: #6fbe45;
+        &:hover {
+            color: #000;
+            background-color: #59b523;
+        }
+}
+
+// -------------- BOOKING ---------------- //
+
+input[type=radio][disabled] + span {
+    text-decoration: line-through;
+}
+
+.booking-container {
+.form-placement {
+    padding-top: 101px;
+    padding-bottom: 35px;
+    }
+}
+.select-class-text {
+    margin-top: -30px;
+    margin-bottom: -5px;
+    font-size: 1.8rem;
+    color: #fff;
+     text-transform: uppercase;
+    }
+
+.select-week-text {
+    margin-top: 25px;
+    font-size: 1.8rem;
+    color: #fff;
+     text-transform: uppercase;
+    }
+
+.pound-session-container {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    h2 {
+        margin-top: 20px;
+        font-size: 1.8rem;
+        color: #fff;
+        margin-bottom: 10px;
+       
+    }
+    
+    span {
+        font-size: 1.7rem;
+        color: rgba(255,255,255,0.8);
+        margin-top: -30px;
+        margin-left: 10px;
+    }
+    input {
+        margin-left: 40px;
+        font-size: 1.5rem;
+    }
+    select {
+        font-size: 1.5rem;
+    }
+    .date-selector {
+        width: 400px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,73 @@
+.outer-pound-session-container {
+    outline: solid 1px grey;
+    width: 350px;
+    height: auto;
+    margin-top: 70px;
+}
+
+.pound-session-label {
+    width: 350px;
+    height: 50px;
+}
+
+.pound-session-user {
+    
+}
+
+.pound-session-grey {
+    
+}
+
+.pound-session-white {
+    
+}
+
+.admin-manage-bookings-container {
+    h2 {
+        margin-top: 130px;
+        text-align: center;
+    }
+    h3 {
+        margin-top: 40px;
+    }
+    
+    
+}
+.pound-session-container {
+//    outline: solid red 1px;
+//    width: 500px;
+
+    li {
+        display: inline-block;
+        margin-top: 15px;
+        width: 400px;
+        
+        span {
+            color: #565656;
+            font-size: 2rem;
+            line-height: 2.5em;
+            text-align: left;
+    }
+    }
+    
+    
+
+    
+    
+    .week-day {
+        display: inline-block;
+    }
+    .from-start-time {
+        display: inline-block;
+    }
+    .to-end-time {
+        display: inline-block;
+    }
+    .where-location {
+        display: inline-block;
+    }
+    .from-to-dash {
+        display: inline-block;
+        line-height: 0;
+    }
+}

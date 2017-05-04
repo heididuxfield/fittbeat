@@ -1,0 +1,52 @@
+.admin-home {
+    height: 727px;
+}
+
+.admin-options-container {
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 760px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-color: rgba(0,0,0,0.7);
+    
+    
+    h2 {
+        color: #fff;
+        text-align: center;
+    }
+
+}
+
+.manage-bookings {
+    width: 418px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+        list-style: none;
+    }
+    a {
+        
+        text-decoration: none;
+    }
+}
+
+
+.return-to-website {
+    width: 418px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    li {
+        text-decoration: none;
+        list-style-type: none;
+        a {
+            
+    }
+   
+    }
+}

@@ -1,0 +1,132 @@
+// ---- Login/registration sticky navbar -- //
+.navbar {
+    width: 100%s;
+    height: 70px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 0px #888888;
+
+}
+.navbar-brand {
+    img {
+        margin-left: -71px;
+        margin-top: -4px;
+        width: 50px;
+        height: 50px;
+    }
+    h1 {
+        margin-left: -11px;
+        margin-top: -24px;
+        font-family: 'Roboto', sans-serif;
+//        color: #fff;
+        font-size: 4rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        line-height: 0em;
+        
+//reverse style - white background    
+color: #444;   
+    }
+}
+
+.navbar-nav {
+    margin-right: -64px;
+    a {
+        margin-top: 10px;
+//        margin-right: 10px;
+        font-family: 'Roboto', sans-serif;
+//            color: #ccc;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.17em;
+        
+        padding: -10px;
+        text-decoration: none;
+
+//reverse style - white background
+//color: #444;
+    }
+}
+
+// ----------- Media Queries ------------- //
+
+
+
+
+
+
+// ----------- Main Navigation --------- //
+nav {
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    background-color: #222;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 0px #888888;
+    
+//reverse style - white background
+background-color: #fff;
+    
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        margin-left: 20px;
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+        h1 {
+            margin-left: 60px;
+            margin-top: -24px;
+            font-family: 'Roboto', sans-serif;
+//            color: #fff;
+            font-size: 4rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            line-height: 0em;
+            
+//reverse style - white background 
+color: #444;
+            
+        }
+    }
+    .nav-links {
+        margin-top: 10px;
+        margin-right: 25px;
+        width: auto;
+        height: auto;
+
+        a {
+outline: red solid 1px;
+            font-family: 'Roboto', sans-serif;
+//            color: #ccc;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.17em;
+            margin-right: 10px;
+            padding: 10px;
+            text-decoration: none;
+
+//reverse style - white background
+color: #444;
+            
+            
+            &:hover {
+                 color: #6ccc44;
+            }
+            
+        }
+        
+
+        
+    }
+    
+}
+
+
