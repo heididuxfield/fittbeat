@@ -19,7 +19,6 @@
                     Designed to improve your rhythm, timing, coordination, speed, agility and endurance. Pound&#174; is about bringing people together through the love of music. It&#39;s a chance to release your inner rockstar, to let loose and have fun no matter what age or fitness level!  
                 </p>
 
-
             </div><!-- end of col-sm-10 col-sm-offset-1 -->
         </div><!-- end of row -->
     </div><!-- end of container-fluid --> 
@@ -66,59 +65,51 @@
                 
                 <h3>Pound&#174; sessions can be done from anywhere so locations may vary. For any enquiries or further information please contact Amy. Why not give it a go and sign up today&#33;</h3>
                 
-                <div class="col-sm-6 col-sm-offset-1">
-                    <h2>Regular sessions</h2>
-                    <div class="grey-box">
-                        <h3>Aspire Health &amp; Sports Tauranga</h3>
-                        <p>Saturday Mornings - 7.30AM-8.15AM</p>
-                        <p>Wednesday Mornings - 6AM-7.30AM</p>
-                        <p>Friday Nights - 6.45PM-7.30PM</p>
-                        <h3>239 SH2 Bethlehem Hall Tauranga</h3>
-                        <p>Monday Nights - 6PM-6.45PM</p>
-                        <p>Wednesday Nights - 6PM-6.45PM</p> 
-                    </div><!-- end of grey-box -->
-                </div><!-- end of col-sm-6 -->
+                <div class="col-sm-7 col-md-7">
+                   <div class="reg-sessions">
+                        <h2>Regular sessions</h2>
+                        <div class="grey-box">
+                            <h3>Aspire Health &amp; Sports Tauranga</h3>
+                            <p>Saturday Mornings - 7.30AM-8.15AM</p>
+                            <p>Wednesday Mornings - 6AM-7.30AM</p>
+                            <p>Friday Nights - 6.45PM-7.30PM</p>
+                            <h3>239 SH2 Bethlehem Hall Tauranga</h3>
+                            <p>Monday Nights - 6PM-6.45PM</p>
+                            <p>Wednesday Nights - 6PM-6.45PM</p> 
+                        </div><!-- end of grey-box -->
+                    </div><!-- end of reg-sessions -->
+                </div><!-- end of col-sm-7 -->
 
-                <div class="col-sm-4">
-                    <h2>Sessions Costs</h2>
-                    <div class="grey-box">
-                        <p>$5 - First class for newbies</p>
-                        <p>$10 - Casual class</p>
-                        <p>$40 - 5x Classes</p>
-                    </div><!-- end of grey-box -->
-                    
-                    <div class="pound-logo">
-                        <img src="{{asset('assets/images/pound-logo.png')}}" alt="Pound Logo">
-                    </div><!-- end of pound logo -->
-                    
-                </div><!-- end of col-sm-4 -->
+                <div class="col-sm-5 col-md-5">
+                   <div class="session-costs">
+                        <h2>Sessions Costs</h2>
+                        <div class="grey-box">
+                            <p>$5 - First class for newbies</p>
+                            <p>$10 - Casual class</p>
+                            <p>$40 - 5x Classes</p>
+                        </div><!-- end of grey-box -->
+
+                        <div class="pound-logo">
+                            <img src="{{asset('assets/images/pound-logo.png')}}" alt="Pound Logo">
+                        </div><!-- end of pound logo -->
+                    </div><!-- end of session-costs --> 
+                </div><!-- end of col-sm-5 -->
 
             </div><!-- end of col-sm-10 col-sm-offset-1 -->
         </div><!-- end of row -->
     </div><!-- end of container-fluid -->
     
-       
     <div class="reg-back-img" style="background-image: url('{{asset('assets/images/pound-class1.jpg')}}')">
-
         <div class="reg-log-container">
                 <h2>Want to join pound&#63;</h2>
                 <h3>Register now to make a booking&#33;</h3>
                 <div class="reg-btn-pos">
                     <a href="{{ url('/register') }}" type="button" class="btn btn-lg register-btn grow">Register</a>
                 </div>
-                   
                     <p class="form-redirect-text">Already Registered&#63;</p>
-                    
                 <div class="log-btn-pos">
                     <a href="{{ url('/login') }}" type="button" class="btn btn-lg login-btn grow">Login</a>
-                </div>
-                
-        </div><!-- end of reg-log-container -->
-        
-    </div><!-- end of reg-back-img -->
-        
-        
-         
-        
-    
+                </div>    
+        </div><!-- end of reg-log-container --> 
+    </div><!-- end of reg-back-img -->    
 </div><!-- end of pound-container -->

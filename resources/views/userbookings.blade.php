@@ -16,12 +16,9 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- Styles -->
             <link href="{{ URL::asset('css/app.css')}}" rel="stylesheet">
-
 </head>
     <body>
-      
        @include('nav')
-       
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -47,7 +44,5 @@
             </form>
         </li>
     </div><!-- end of return-to-website -->
-    
     </body>
 </html>
-

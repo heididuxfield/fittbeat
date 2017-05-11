@@ -16,12 +16,10 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- Styles -->
             <link href="{{ URL::asset('css/app.css')}}" rel="stylesheet">
-
 </head>
     <body>
       
        @include('nav')
-       
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -29,7 +27,6 @@
                     <a href="{{ url('/register') }}">Register</a>
                 </div>
             @endif
-
        </div>
           
 <div class="booking-container"> 
@@ -46,7 +43,6 @@
                                 <h3 class="select-class-text">Please select the class you wish to attend</h3>
                                 
                                 <div class="pound-session-container">
-                                
                                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                         @if(session('error'))
                                         <div class="alert alert-danger">
@@ -117,8 +113,6 @@
             </div>
         </div>
     </div><!-- end of form-placement --> 
-
 </div><!-- end of booking -->         
     </body>
 </html>
-

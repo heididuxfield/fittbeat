@@ -26,17 +26,6 @@ Route::get('/bookingform', 'HomeController@index');
 //Route::get('/unbook/{timeslot_id}/{user_id}', '');
 
 
-//Route::get('/managebookings', function () {
-//    
-//    $timeslots = DB::table('timeslots')->get();
-//    
-//    return view('admin.managebookings', compact('timeslots'));
-//    
-//});
-
-//Route::get('/managebookings', 'HomeController@index');
-
-
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::get('/', 'Auth\LoginController@showLoginForm');
     Route::post('login', 'Auth\LoginController@login');
@@ -46,18 +35,12 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
     Route::post('password/reset', 'Auth\ResetPasswordController@reset');
     Route::get('register', 'Auth\RegisterController@showRegistrationForm');
     Route::post('register', 'Auth\RegisterController@register');
-    
     Route::get('/managebookings', 'HomeController@manageBookings');
-Route::post('/managebookings', 'HomeController@manageBookings');
-    
-//    Route::get('managebookings', 'HomeController@manageBookings');
-    
+    Route::post('/managebookings', 'HomeController@manageBookings');
     Route::get('home', 'HomeController@index');
 });
+
 Route::get('/userbookings', 'TimeslotController@index');
 Route::get('/userbookings', 'TimeslotController@HandleBookings');
 Route::post('/userbookings', 'TimeslotController@HandleBookings');
-
 Route::get('/userbookings', 'TimeslotController@index');
-
-

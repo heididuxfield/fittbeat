@@ -17,7 +17,6 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth.admin', ['except' => 'manageBookings']);
-//        $this->middleware('auth.admin');
     }
 
     /**
@@ -30,8 +29,6 @@ class HomeController extends Controller
         return view('admin.home');
     }
     
-    
-
     public function manageBookings()
     {
         $date = Carbon::now();
@@ -49,13 +46,7 @@ class HomeController extends Controller
                 'timeslot' => $timeslot,
                 'users' => $users
             ];
-
         }
-        
-//        $timeslots = Timeslots::all()
-//            ->users()
-//            ->where('bookings.week', $date->weekOfYear)
-//            ->get();
 
         return view('admin.managebookings', compact('data'));
     } 

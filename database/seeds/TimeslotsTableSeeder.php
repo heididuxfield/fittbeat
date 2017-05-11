@@ -11,7 +11,6 @@ class TimeslotsTableSeeder extends Seeder
      */
     public function run()
     {
-        
         //delete timeslots table records
          DB::table('timeslots')->delete();
         

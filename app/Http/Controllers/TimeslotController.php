@@ -12,47 +12,34 @@ use Carbon\Carbon;
 class TimeslotController extends Controller
 {
     
-    
     public function index() {
         
         $timeslots = Auth::user()->bookings;
         
         return view('userbookings', compact('timeslots'));
     }
-        public function HandleBookings (Request $request) {
+    
+    public function HandleBookings (Request $request) {
         
             
         $timeslot = Timeslots::find($request->poundsession);
             
         $date = Carbon::parse($request->date);
             
-            if(!$request->poundsession) {
+        if(!$request->poundsession) {
                 return redirect('/bookingform')->with('error', 'You need to select a session');
             }
 
-            if($timeslot->users()->count() >= 25){
+        if($timeslot->users()->count() >= 25){
                 return redirect('/bookingform')->with('error', 'That session is overbooked');
             }
             
-            $timeslot->users()->attach(Auth::user()->id, [
+        $timeslot->users()->attach(Auth::user()->id, [
                 'week' => $date->weekOfYear,
                 'year' => $date->year
             ]);
-
-           
-    
-            
-        return redirect('userbookings');
-
-         
+        
+        return redirect('userbookings');  
     }
-    
-//    public function ChosenWeek()
-//    {
-//        
-//        
-//        return
-//    } 
-   
     
 }

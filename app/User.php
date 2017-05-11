@@ -29,29 +29,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
     
-    // now related to model:Timeslots & model:Bookings 
     public function timeslots() {
-        
-//        $user = App\User::find(1)->timeslots()->orderBy('id')->get();
-//        $user = App\User::find($user_id);
-//        $user->timeslots()->attach($timeslot_id);
-        
-//        foreach ($user->timeslots as $timeslot) {
-//            echo $timeslot->pivot->year;
-//        }
         
         return $this->belongsToMany('\App\Timeslots', 'bookings', 'user_id', 'timeslot_id')->withPivot('week', 'year')->withTimestamps();
     } 
-    
-//    public function scopePopular($query)
-//        
-//        {
-//        return $query->where('votes', '>', 100);
-//    }
-//    
-//     public function scopeActive($query)
-//    {
-//        return $query->where('active', 1);
-//    }
 
 }

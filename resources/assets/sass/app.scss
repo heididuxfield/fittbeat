@@ -7,7 +7,6 @@
 @import "testimonials";
 @import "footer";
 
-
 @import url('https://fonts.googleapis.com/css?family=Roboto|Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300');
@@ -20,8 +19,6 @@
 @import "forms";
 @import "adminmanagebookings";
 @import "adminhome";
-
-
 
 // -------------- MAIN ---------------- //
 body {
@@ -38,6 +35,7 @@ body {
 
 .grey-box {
     background-color: rgba(0,0,0,0.03);
+     border-radius: 5px;
 }
 
 .grow {
@@ -142,8 +140,7 @@ input[type=radio][disabled] + span {
         margin-top: 20px;
         font-size: 1.8rem;
         color: #fff;
-        margin-bottom: 10px;
-       
+        margin-bottom: 10px;   
     }
     
     span {

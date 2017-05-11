@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
         
          $this->call(TimeslotsTableSeeder::class);
         
-        /* this message shown in your terminal after running db:seed command */
+        /* this message shown in terminal after running db:seed command */
         $this->command->info("Timeslots table seeded");
     }
 }

@@ -29,10 +29,8 @@ class HomeController extends Controller
     public function index()
     {
         $timeslots = Timeslots::all();
-        
+            
         return view('bookingform', compact ('timeslots'));
-
-    }
-    
-
+        
+    } 
 }

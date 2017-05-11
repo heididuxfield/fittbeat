@@ -82,6 +82,10 @@ h3 {
   color: #666;
 }
 
+.special-cert-container .grey-box {
+  margin-top: 40px;
+}
+
 .special-cert-container h2 {
   margin-top: 1.9em;
   margin-bottom: 0.5em;
@@ -89,16 +93,20 @@ h3 {
 }
 
 .special-cert-container .specialisations h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 1.75rem;
   text-align: center;
+  line-height: 3.4em;
 }
 
 .special-cert-container .specialisations .special-left {
-  margin-right: 20px;
+  margin-left: 2.95%;
   display: inline-block;
 }
 
 .special-cert-container .specialisations .special-right {
+  margin-left: 2.95%;
   display: inline-block;
 }
 
@@ -107,6 +115,28 @@ h3 {
   padding-bottom: 0.4em;
   font-size: 2rem;
   text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .specialisations .special-left {
+    transition: 2s;
+    padding-left: 20%;
+  }
+  .specialisations .special-right {
+    transition: 2s;
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .specialisations .special-left {
+    transition: 2s;
+    padding-left: 12%;
+  }
+  .specialisations .special-right {
+    transition: 2s;
+    padding-left: 12%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -124,7 +154,7 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media (max-width: 320px) {
   .about-header-text h1 {
     font-size: 3rem;
     transition: 2s;
@@ -147,7 +177,8 @@ h3 {
 .green-prompt {
   margin-top: 50px;
   width: 100%;
-  height: 185px;
+  min-height: 165px;
+  padding-bottom: 20px;
   background-color: #6ccc44;
 }
 
@@ -185,10 +216,30 @@ h3 {
   filter: none !important;
 }
 
+.reg-sessions .grey-box {
+  margin-top: 20px;
+}
+
+.reg-sessions p {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.session-costs .grey-box {
+  padding: 0.5em;
+  margin-top: 20px;
+  margin-left: 1em;
+}
+
+.session-costs p {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
 .pound-logo img {
   width: 300px;
   height: auto;
-  margin-left: 3em;
+  margin-left: 15%;
   margin-top: 5em;
 }
 
@@ -209,6 +260,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
 }
 
 .reg-log-container h2 {
@@ -281,6 +333,20 @@ footer span:hover {
   color: #59b523;
 }
 
+.get-in-touch {
+  width: 480px;
+  display: block;
+}
+
+.get-in-touch h3 {
+  width: 400px;
+}
+
+.social-media-container {
+  width: 480px;
+  display: block;
+}
+
 .follow-sm {
   margin-left: 50px;
 }
@@ -342,7 +408,7 @@ footer span:hover {
 
 .footer-bar {
   margin-top: 40px;
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background-color: #404041;
 }
@@ -8018,7 +8084,7 @@ button.close {
 }
 
 .navbar {
-  width: 100%s;
+  width: 100%;
   height: 70px;
   position: fixed;
   background-color: #fff;
@@ -8063,7 +8129,6 @@ nav {
   width: 100vw;
   height: 70px;
   position: fixed;
-  background-color: #222;
   z-index: 1;
   box-shadow: 0px 0px 10px 0px #888888;
   background-color: #fff;
@@ -8108,7 +8173,6 @@ nav .nav-links {
 }
 
 nav .nav-links a {
-  outline: red solid 1px;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -8318,16 +8382,11 @@ label {
   margin-top: -1.5px;
 }
 
-.outer-pound-session-container {
-  outline: solid 1px grey;
-  width: 350px;
-  height: auto;
-  margin-top: 70px;
-}
-
 .pound-session-label {
-  width: 350px;
-  height: 50px;
+  font-size: 2.3rem;
+  text-align: center;
+  width: 390px;
+  margin-top: 40px;
 }
 
 .admin-manage-bookings-container h2 {
@@ -8342,35 +8401,14 @@ label {
 .pound-session-container li {
   display: inline-block;
   margin-top: 15px;
-  width: 400px;
-}
-
-.pound-session-container li span {
+  width: 150px;
   color: #565656;
   font-size: 2rem;
-  line-height: 2.5em;
-  text-align: left;
+  text-align: center;
 }
 
-.pound-session-container .week-day {
-  display: inline-block;
-}
-
-.pound-session-container .from-start-time {
-  display: inline-block;
-}
-
-.pound-session-container .to-end-time {
-  display: inline-block;
-}
-
-.pound-session-container .where-location {
-  display: inline-block;
-}
-
-.pound-session-container .from-to-dash {
-  display: inline-block;
-  line-height: 0;
+#nobody-booked {
+  width: 300px;
 }
 
 .admin-home {
@@ -8434,6 +8472,7 @@ body {
 
 .grey-box {
   background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
 }
 
 .grow {

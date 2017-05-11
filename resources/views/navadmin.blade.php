@@ -16,7 +16,6 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="{{ URL::to('/assets') }}/images/logo.png" alt="logo" width="50px" height="50px">
                      <h1>Fittbeat</h1>
-<!--                         {{ config('app.name', 'Laravel') }}-->
                 </a>
             </div><!-- end of navbar-header -->
 
@@ -42,15 +41,15 @@
 
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                    <a href="{{ url('/admin/logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                <a href="{{ url('/admin/logout') }}"
+                               onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();">
                                         Logout
                                     </a>
 
-                                    <form id="logout-form" action="{{ url('/admin/logout') }}" method="POST"
-                                          style="display: none;">
-                                        {{ csrf_field() }}
+                            <form id="logout-form" action="{{ url('/admin/logout') }}" method="POST"
+                              style="display: none;">
+                                {{ csrf_field() }}
                                     </form>
                                 </li>
                             </ul>
