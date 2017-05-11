@@ -59,6 +59,7 @@
                                         
                                         <h2>239 SH2 Bethlehem Hall Tauranga</h2>
                                         <label>
+                                        {{ dd($timeslots)}}
                                         <input type="radio" name="poundsession" value="1" {{ $timeslots[0]->users()->count() >= 25 ? 'disabled' : '' }}>  
                                         <span>Monday Evening 6:00 &#45; 6:45 pm</span><br>
                                         </label>
